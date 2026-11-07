@@ -2,6 +2,7 @@
 **/*.rs.bk
 *.minisig
 *.key
+*.hnmod
 tools/
 .DS_Store
 Thumbs.db
