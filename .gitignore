@@ -1,6 +1,7 @@
 /target/
 **/*.rs.bk
 *.minisig
-horizon-mods.key
+*.key
+tools/
 .DS_Store
 Thumbs.db
