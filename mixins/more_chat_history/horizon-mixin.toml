@@ -1,0 +1,33 @@
+[mod]
+id = "more_chat_history"
+version = "0.1.0"
+priority = 100
+
+[compatibility]
+horizon_revision = "0876de55cceed0bf12f822990faba5b5790feb75"
+
+[[module]]
+id = "runtime"
+file = "crates/horizon-client-render/src/chat.rs"
+name = "more_chat_history"
+source = "runtime.rs"
+
+[[injection]]
+id = "chat-messages-limit"
+target = "horizon_client_render::chat::Chat::add_message"
+kind = "MODIFY_CONSTANT"
+helper = "limit_messages.rs"
+selector = "100"
+require = 1
+ordinal = 0
+bindings = [{ name = "value", ty = "usize", value = "$value" }]
+
+[[injection]]
+id = "chat-lines-limit"
+target = "horizon_client_render::chat::Chat::add_lines"
+kind = "MODIFY_CONSTANT"
+helper = "limit_lines.rs"
+selector = "100"
+require = 1
+ordinal = 0
+bindings = [{ name = "value", ty = "usize", value = "$value" }]
