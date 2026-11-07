@@ -2,6 +2,7 @@
 **/*.rs.bk
 *.minisig
 *.key
+*.pub
 *.hnmod
 tools/
 .DS_Store
