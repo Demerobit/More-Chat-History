@@ -14,7 +14,7 @@ This mod uses `horizon-mixins` with `MODIFY_CONSTANT` injections targeting both 
 
 ```text
 More-Chat-History/
-├── more_chat_history-0.1.0.hnmod # Packaged distribution file
+├── more_chat_history-0.1.1.hnmod # Packaged distribution file
 ├── .gitignore
 ├── Cargo.toml                  # Standalone crate definition for local cargo check
 ├── LICENSE                     # MIT License
@@ -41,10 +41,10 @@ horizon-launcher native-build mixins/more_chat_history --trust-native-code
 ```bash
 python package.py
 ```
-Outputs `more_chat_history-0.1.0.hnmod`.
+Outputs `more_chat_history-0.1.1.hnmod`.
 
 ## Submitting to the Registry
 
-1. Download or use `more_chat_history-0.1.0.hnmod`.
+1. Download or use `more_chat_history-0.1.1.hnmod`.
 2. Go to [playhorizon.dev/mods/submit](https://playhorizon.dev/mods/submit) and sign in with GitHub.
-3. Select **Native Mod** and upload `more_chat_history-0.1.0.hnmod`.
+3. Select **Native Mod** and upload `more_chat_history-0.1.1.hnmod`.

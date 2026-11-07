@@ -1,6 +1,6 @@
 [package]
 name = "more-chat-history"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 description = "More Chat History: expands Horizon's chat history limit from 100 lines to 10,000 lines"
